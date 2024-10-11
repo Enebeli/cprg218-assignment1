@@ -1,0 +1,45 @@
+*{box-sizing: border-box;}
+html{ font-family: sans-serif;}
+header{ background-color: #120323;}
+header img{max-width: 100%; height: auto;}
+h1{ color: #97bf04;}
+h2{color: #120323;}
+figure{margin: 0; text-align: center;}
+figure img{ width: 100%; max-width: 100%; height: auto; border:2px solid #d9043d; margin-right: 10px;}
+figcaption{margin-top: 10px;}
+aside{ background-color: #97bf04; padding: 20px;}
+footer{background-color: #d9043d; text-align: center; padding: 10px; margin-top: 20px;}
+small{color: white;}
+
+
+#container{display: flex; flex-direction: column;}
+
+
+@media screen and (min-width:1000px){
+    header img{width: 10%; height: 10%; margin-top: 10px; margin-bottom: 10px;}
+    header{display: flex; justify-content: center; align-items: center;font-size: 12pt; }
+     figure{display: flex; flex-direction: row; justify-content: space-between; align-items: center; text-align: left; font-size: small;} 
+     figure img{width: 250px;}
+    div#container{display: flex; 
+        flex-direction: row; 
+        justify-content: space-between;
+        margin-top: 10px;}
+        aside{display: flex; flex-direction: row; flex: auto; flex-direction: column; flex: auto;
+             padding-left: 10px; padding-right: 10px; font-size: small;}
+    
+} 
+@media screen and (max-width:1000px){
+    body{background-color: white;}
+    img{float: none; width: 300px; height: auto; margin-top: 10px; margin-bottom: 10px;}
+    header{display: flex; justify-content: center; align-items: center; }
+    figure img{max-width: 300px; max-height: 400px; margin-top: 10px; margin-bottom: 10px;}
+    figure{display: flex;flex-direction: row; text-align: left; font-size: small;}
+}
+@media screen and (max-width:768px){
+    body{background-color: white; }
+    img{float: none; width: 10%; height: 10%; margin-top: 10px;}
+    header{display: flex; flex-direction: column; justify-content: space-between; align-items: center; font-size: small;}
+    div#container{display: flex; flex-direction: column;}
+    figure{display: flex; flex-direction: column;}
+    figure img{max-width: 100%; max-height: auto;}
+}
